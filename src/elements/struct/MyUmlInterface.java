@@ -4,6 +4,7 @@ import com.oocourse.uml1.models.elements.UmlInterface;
 import datastructure.MyMap;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class MyUmlInterface extends MyUmlStruct {
     private final UmlInterface umlInterface;
@@ -20,9 +21,8 @@ public class MyUmlInterface extends MyUmlStruct {
     
     public Set<MyUmlInterface> getSuperInterfaces() {
         Set<MyUmlInterface> result = superInterfaces.values();
-        for (MyUmlInterface umlInterface : result) {
-            result.addAll(umlInterface.getSuperInterfaces());
-        }
+        result.addAll(result.stream().map(MyUmlInterface::getSuperInterfaces)
+                .flatMap(Set::stream).collect(Collectors.toSet()));
         return result;
     }
     
