@@ -21,6 +21,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.HashSet;
 import java.util.stream.Collectors;
 
 public class MyUmlInteraction implements UmlInteraction {
@@ -140,8 +142,15 @@ public class MyUmlInteraction implements UmlInteraction {
     @Override
     public List<String> getImplementInterfaceList(String className)
             throws ClassNotFoundException, ClassDuplicatedException {
-        return diagram.getClass(className).getInterfaces().stream()
-                .map(MyUmlInterface::getName).distinct()
+        Set<MyUmlInterface> interfaces = new HashSet<>();
+        for (MyUmlClass c = diagram.getClass(className);
+             c != null; c = c.getSuperClass()) {
+            interfaces.addAll(c.getInterfaces());
+        }
+        interfaces.addAll(interfaces.stream()
+                .map(MyUmlInterface::getSuperInterfaces)
+                .flatMap(Set::stream).collect(Collectors.toSet()));
+        return interfaces.stream().map(MyUmlInterface::getName)
                 .collect(Collectors.toList());
     }
     

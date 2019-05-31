@@ -60,6 +60,19 @@ public class MyUmlClass extends MyUmlStruct {
     }
     
     @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof MyUmlClass)) {
+            return false;
+        }
+        return umlClass.equals(((MyUmlClass) obj).umlClass);
+    }
+    
+    @Override
+    public int hashCode() {
+        return umlClass.hashCode();
+    }
+    
+    @Override
     public String toString() {
         return "class " + getName();
     }
