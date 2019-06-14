@@ -1,8 +1,8 @@
 package elements.struct;
 
-import com.oocourse.uml1.interact.exceptions.user.AttributeDuplicatedException;
-import com.oocourse.uml1.models.elements.UmlAttribute;
-import com.oocourse.uml1.models.elements.UmlClass;
+import com.oocourse.uml2.interact.exceptions.user.AttributeDuplicatedException;
+import com.oocourse.uml2.models.elements.UmlAttribute;
+import com.oocourse.uml2.models.elements.UmlClass;
 import datastructure.MyMap;
 import datastructure.exceptions.ElementDuplicatedException;
 import datastructure.exceptions.ElementNotFoundException;

@@ -1,9 +1,9 @@
 package elements;
 
-import com.oocourse.uml1.interact.common.OperationQueryType;
-import com.oocourse.uml1.models.common.Direction;
-import com.oocourse.uml1.models.elements.UmlOperation;
-import com.oocourse.uml1.models.elements.UmlParameter;
+import com.oocourse.uml2.interact.common.OperationQueryType;
+import com.oocourse.uml2.models.common.Direction;
+import com.oocourse.uml2.models.elements.UmlOperation;
+import com.oocourse.uml2.models.elements.UmlParameter;
 
 import java.util.HashSet;
 

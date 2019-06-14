@@ -1,6 +1,6 @@
 package elements.struct;
 
-import com.oocourse.uml1.models.elements.UmlInterface;
+import com.oocourse.uml2.models.elements.UmlInterface;
 import datastructure.MyMap;
 
 import java.util.Set;

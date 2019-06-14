@@ -1,7 +1,7 @@
 package elements;
 
-import com.oocourse.uml1.models.elements.UmlAssociation;
-import com.oocourse.uml1.models.elements.UmlAssociationEnd;
+import com.oocourse.uml2.models.elements.UmlAssociation;
+import com.oocourse.uml2.models.elements.UmlAssociationEnd;
 
 class MyUmlAssociation {
     private final UmlAssociation umlAssociation;

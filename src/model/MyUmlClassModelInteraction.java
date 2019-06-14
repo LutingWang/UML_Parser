@@ -1,16 +1,16 @@
 package model;
 
-import com.oocourse.uml1.interact.common.AttributeClassInformation;
-import com.oocourse.uml1.interact.common.AttributeQueryType;
-import com.oocourse.uml1.interact.common.OperationQueryType;
-import com.oocourse.uml1.interact.exceptions.user.AttributeDuplicatedException;
-import com.oocourse.uml1.interact.exceptions.user.AttributeNotFoundException;
-import com.oocourse.uml1.interact.exceptions.user.ClassDuplicatedException;
-import com.oocourse.uml1.interact.exceptions.user.ClassNotFoundException;
-import com.oocourse.uml1.interact.format.UmlInteraction;
-import com.oocourse.uml1.models.common.Visibility;
-import com.oocourse.uml1.models.elements.UmlAttribute;
-import com.oocourse.uml1.models.elements.UmlElement;
+import com.oocourse.uml2.interact.common.AttributeClassInformation;
+import com.oocourse.uml2.interact.common.AttributeQueryType;
+import com.oocourse.uml2.interact.common.OperationQueryType;
+import com.oocourse.uml2.interact.exceptions.user.AttributeDuplicatedException;
+import com.oocourse.uml2.interact.exceptions.user.AttributeNotFoundException;
+import com.oocourse.uml2.interact.exceptions.user.ClassDuplicatedException;
+import com.oocourse.uml2.interact.exceptions.user.ClassNotFoundException;
+import com.oocourse.uml2.interact.format.UmlClassModelInteraction;
+import com.oocourse.uml2.models.common.Visibility;
+import com.oocourse.uml2.models.elements.UmlAttribute;
+import com.oocourse.uml2.models.elements.UmlElement;
 import elements.struct.MyUmlClass;
 import elements.MyUmlDiagram;
 import elements.struct.MyUmlInterface;
@@ -25,10 +25,10 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.stream.Collectors;
 
-public class MyUmlInteraction implements UmlInteraction {
+class MyUmlClassModelInteraction implements UmlClassModelInteraction {
     private final MyUmlDiagram diagram;
     
-    public MyUmlInteraction(UmlElement... elements) {
+    MyUmlClassModelInteraction(UmlElement... elements) {
         ArrayList<UmlElement> umlElements = new ArrayList<>();
         Collections.addAll(umlElements, elements);
         diagram = new MyUmlDiagram(umlElements);

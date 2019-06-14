@@ -1,6 +1,6 @@
 package elements.struct;
 
-import com.oocourse.uml1.interact.common.OperationQueryType;
+import com.oocourse.uml2.interact.common.OperationQueryType;
 import datastructure.MyMap;
 import elements.MyUmlOperation;
 
