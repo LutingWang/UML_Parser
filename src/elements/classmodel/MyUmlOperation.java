@@ -1,4 +1,4 @@
-package elements;
+package elements.classmodel;
 
 import com.oocourse.uml2.interact.common.OperationQueryType;
 import com.oocourse.uml2.models.common.Direction;

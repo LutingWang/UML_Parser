@@ -3,6 +3,7 @@ package datastructure;
 import datastructure.exceptions.ElementDuplicatedException;
 import datastructure.exceptions.ElementNotFoundException;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -11,6 +12,14 @@ import java.util.stream.Collectors;
 
 public class MyMap<T> {
     private final HashMap<T, String> map = new HashMap<>();
+    
+    public int size() {
+        return map.size();
+    }
+    
+    public Collection<String> keys() {
+        return map.values();
+    }
     
     public Set<T> values() {
         return new HashSet<>(map.keySet());

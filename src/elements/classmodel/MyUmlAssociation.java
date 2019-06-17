@@ -1,12 +1,14 @@
-package elements;
+package elements.classmodel;
 
 import com.oocourse.uml2.models.elements.UmlAssociation;
 import com.oocourse.uml2.models.elements.UmlAssociationEnd;
+import elements.classmodel.struct.MyUmlClassOrInterface;
 
 class MyUmlAssociation {
     private final UmlAssociation umlAssociation;
     private final UmlAssociationEnd[] umlAssociationEnds
             = new UmlAssociationEnd[2];
+    private MyUmlClassOrInterface[] umlStructs = null;
     
     MyUmlAssociation(UmlAssociation association) {
         umlAssociation = association;
@@ -18,11 +20,12 @@ class MyUmlAssociation {
         return umlAssociation;
     }
     
-    String[] getReferences() {
-        String[] result = new String[2];
-        result[0] = umlAssociationEnds[0].getReference();
-        result[1] = umlAssociationEnds[1].getReference();
-        return result;
+    UmlAssociationEnd[] getUmlAssociationEnds() {
+        return umlAssociationEnds;
+    }
+    
+    MyUmlClassOrInterface[] getAssociatedStructs() {
+        return umlStructs;
     }
     
     void addEnd(UmlAssociationEnd end) {
@@ -33,5 +36,10 @@ class MyUmlAssociation {
         } else {
             throw new RuntimeException();
         }
+    }
+    
+    void setUmlStructs(MyUmlClassOrInterface source,
+                       MyUmlClassOrInterface target) {
+        umlStructs = new MyUmlClassOrInterface[]{source, target};
     }
 }
