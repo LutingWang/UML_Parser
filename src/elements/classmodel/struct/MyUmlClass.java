@@ -91,11 +91,11 @@ public class MyUmlClass extends MyUmlClassOrInterface {
     }
     
     public UmlClass checkForUml009(Set<MyUmlInterface> markedInterfaces) {
-        if (super.checkForUml009()) {
-            return this.umlClass;
-        }
         ArrayList<MyUmlInterface> interfaces = new ArrayList<>();
         for (MyUmlClass c = this; c != null; c = c.getSuperClass()) {
+            if (c.checkForUml009()) {
+                return this.umlClass;
+            }
             for (MyUmlInterface i : c.interfaces.values()) {
                 if (markedInterfaces.contains(i) || interfaces.contains(i)) {
                     return this.umlClass;
@@ -103,9 +103,10 @@ public class MyUmlClass extends MyUmlClassOrInterface {
                 interfaces.add(i);
             }
         }
-        for (MyUmlInterface i : interfaces) {
+        for (int pos = 0; interfaces.size()  != pos; pos++) {
+            MyUmlInterface i = interfaces.get(pos);
             for (MyUmlInterface si : i.getSuperInterfaces()) {
-                if (interfaces.contains(i)) {
+                if (markedInterfaces.contains(i) || interfaces.contains(i)) {
                     return this.umlClass;
                 }
                 interfaces.add(si);
