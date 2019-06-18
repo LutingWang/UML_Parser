@@ -103,18 +103,6 @@ public class MyUmlClass extends MyUmlClassOrInterface {
                 interfaces.add(i);
             }
         }
-        for (int pos = 0; interfaces.size() != pos; pos++) {
-            MyUmlInterface i = interfaces.get(pos);
-            if (markedInterfaces.contains(i)) {
-                return this.umlClass;
-            }
-            for (MyUmlInterface si : i.getSuperInterfaces()) {
-                if (interfaces.contains(si)) {
-                    return this.umlClass;
-                }
-                interfaces.add(si);
-            }
-        }
         return null;
     }
     
