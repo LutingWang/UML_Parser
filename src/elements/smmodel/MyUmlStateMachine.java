@@ -43,9 +43,10 @@ public class MyUmlStateMachine {
             throws StateNotFoundException,
             StateDuplicatedException {
         ArrayList<String> fromId = new ArrayList<>();
-        int pos = 0;
+        int pos = -1;
+        String stateId;
         try {
-            fromId.add(states.get(stateName).getId());
+            stateId = states.get(stateName).getId();
         } catch (ElementNotFoundException e) {
             throw new StateNotFoundException(stateMachine.getName(), stateName);
         } catch (ElementDuplicatedException e) {
@@ -53,14 +54,19 @@ public class MyUmlStateMachine {
                     stateMachine.getName(), stateName);
         }
         for (; fromId.size() != pos; pos++) {
-            String fid = fromId.get(pos);
+            final String fid;
+            if (pos >= 0) {
+                fid = fromId.get(pos);
+            } else {
+                fid = stateId;
+            }
             this.transitions.stream()
                     .filter(t -> fid.equals(t.getSource()))
                     .map(UmlTransition::getTarget)
                     .filter(targetId -> !fromId.contains(targetId))
                     .forEach(fromId::add);
         }
-        return (int) fromId.stream().distinct().count() - 1;
+        return fromId.size();
     }
     
     public ArrayList<UmlTransition> getTransitions() {
