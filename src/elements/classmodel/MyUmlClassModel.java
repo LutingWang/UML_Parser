@@ -27,7 +27,9 @@ import elements.classmodel.struct.MyUmlClassOrInterface;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.ListIterator;
+import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -158,21 +160,30 @@ public class MyUmlClassModel {
     
     public void checkForUml002() throws UmlRule002Exception {
         HashSet<AttributeClassInformation> result = new HashSet<>();
-        associations.values().forEach(association -> {
-            MyUmlClassOrInterface[] structs =
-                    association.getAssociatedStructs();
-            UmlAssociationEnd[] ends = association.getUmlAssociationEnds();
-            if (structs[0] instanceof MyUmlClass) {
-                result.addAll(((MyUmlClass) structs[0])
-                        .checkForUml002(ends[1].getName()));
-            }
-            if (structs[1] instanceof MyUmlClass) {
-                result.addAll(((MyUmlClass) structs[1])
-                        .checkForUml002(ends[0].getName()));
-            }
-        });
         for (MyUmlClass c : this.classes.values()) {
-            result.addAll(c.checkForUml002());
+            List<String> names = this.associations.values().stream()
+                    .map(association -> {
+                        MyUmlClassOrInterface[] structs
+                                = association.getAssociatedStructs();
+                        UmlAssociationEnd[] ends
+                                = association.getUmlAssociationEnds();
+                        if (structs[0] == c) {
+                            return ends[1].getName();
+                        }
+                        if (structs[1] == c) {
+                            return ends[0].getName();
+                        }
+                        return null;
+                    }).filter(Objects::nonNull).collect(Collectors.toList());
+            names.addAll(c.getAttributeNames());
+            for (int i = 0; i < names.size() - 1; i++) {
+                for (int j = i + 1; j < names.size(); j++) {
+                    if (names.get(i).equals(names.get(j))) {
+                        result.add(new AttributeClassInformation(
+                                names.get(i), c.getName()));
+                    }
+                }
+            }
         }
         if (result.size() != 0) {
             throw new UmlRule002Exception(result);
