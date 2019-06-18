@@ -7,7 +7,7 @@ import java.io.PrintStream;
 
 public class Main {
     // TODO: turn off
-    private static boolean INPUT_REDIR = false;
+    private static boolean INPUT_REDIR = true;
     
     public static void main(String[] args) throws Exception {
         if (INPUT_REDIR) {

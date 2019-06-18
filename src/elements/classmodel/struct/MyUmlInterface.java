@@ -42,6 +42,9 @@ public class MyUmlInterface extends MyUmlClassOrInterface {
                 if (i == this) {
                     return this.umlInterface;
                 }
+                if (list.contains(i)) {
+                    continue;
+                }
                 list.add(i);
             }
         }
@@ -49,12 +52,12 @@ public class MyUmlInterface extends MyUmlClassOrInterface {
     }
     
     public UmlInterface checkForUml009(Set<MyUmlInterface> m /* null */) {
-        if (super.checkForUml009()) {
-            return this.umlInterface;
-        }
         ArrayList<MyUmlInterface> queue = new ArrayList<>();
         queue.add(this);
         for (int pos = 0; pos != queue.size(); pos++) {
+            if (queue.get(pos).checkForUml009()) {
+                return this.umlInterface;
+            }
             for (MyUmlInterface i : queue.get(pos).superInterfaces.values()) {
                 if (queue.contains(i)) {
                     return this.umlInterface;
