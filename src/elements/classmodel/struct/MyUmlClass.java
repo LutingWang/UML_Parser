@@ -60,10 +60,13 @@ public class MyUmlClass extends MyUmlClassOrInterface {
     }
     
     public void setSuperClass(MyUmlClass superClass) {
+        super.setReRealization(this.superClass != null);
         this.superClass = superClass;
     }
     
     public void addInterface(MyUmlInterface umlInterface) {
+        super.setReRealization(this.interfaces.values()
+                .contains(umlInterface));
         interfaces.put(umlInterface.getName(), umlInterface);
     }
     
@@ -83,6 +86,14 @@ public class MyUmlClass extends MyUmlClassOrInterface {
         } catch (Exception e) {
             addInfo.accept(endName);
         }
+        return result;
+    }
+    
+    public HashSet<AttributeClassInformation> checkForUml002() {
+        HashSet<AttributeClassInformation> result = new HashSet<>();
+        Consumer<String> addInfo = attrname ->
+                result.add(new AttributeClassInformation(
+                        attrname, umlClass.getName()));
         ArrayList<String> attrnames = new ArrayList<>(this.attributes.keys());
         for (int i = 0; i < attrnames.size() - 1; i++) {
             for (int j = i + 1; j < attrnames.size(); j++) {
@@ -109,6 +120,9 @@ public class MyUmlClass extends MyUmlClassOrInterface {
     }
     
     public UmlClass checkForUml009(Set<MyUmlInterface> markedInterfaces) {
+        if (super.checkForUml009()) {
+            return this.umlClass;
+        }
         ArrayList<MyUmlInterface> interfaces = new ArrayList<>();
         for (MyUmlClass c = this; c != null; c = c.getSuperClass()) {
             for (MyUmlInterface i : c.interfaces.values()) {

@@ -52,9 +52,10 @@ public class MyUmlStateMachine {
             throw new StateDuplicatedException(
                     stateMachine.getName(), stateName);
         }
-        while (fromId.size() != pos) {
+        for (; fromId.size() != pos; pos++) {
+            String fid = fromId.get(pos);
             this.transitions.stream()
-                    .filter(t -> fromId.get(pos).equals(t.getSource()))
+                    .filter(t -> fid.equals(t.getSource()))
                     .map(UmlTransition::getTarget)
                     .filter(targetId -> !fromId.contains(targetId))
                     .forEach(fromId::add);

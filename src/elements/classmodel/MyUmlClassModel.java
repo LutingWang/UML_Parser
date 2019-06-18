@@ -80,8 +80,12 @@ public class MyUmlClassModel {
                             .addEnd((UmlAssociationEnd) element);
                     break;
                 case UML_ATTRIBUTE:
-                    ((MyUmlClass) structs.get(element.getParentId()))
-                            .addAttribute((UmlAttribute) element);
+                    MyUmlClassOrInterface struct
+                            = structs.get(element.getParentId());
+                    if (struct != null) {
+                        ((MyUmlClass) struct)
+                                .addAttribute((UmlAttribute) element);
+                    }
                     break;
                 case UML_GENERALIZATION:
                     UmlGeneralization generalization
@@ -167,6 +171,9 @@ public class MyUmlClassModel {
                         .checkForUml002(ends[0].getName()));
             }
         });
+        for (MyUmlClass c : this.classes.values()) {
+            result.addAll(c.checkForUml002());
+        }
         if (result.size() != 0) {
             throw new UmlRule002Exception(result);
         }
@@ -190,7 +197,7 @@ public class MyUmlClassModel {
         HashSet<UmlClassOrInterface> result = new HashSet<>();
         Set<MyUmlInterface> markedInterfaces = this.interfaces.values().stream()
                 .filter(i -> {
-                    UmlInterface ui = i.checkForUml009();
+                    UmlInterface ui = i.checkForUml009(null);
                     if (ui != null) {
                         result.add(ui);
                     }

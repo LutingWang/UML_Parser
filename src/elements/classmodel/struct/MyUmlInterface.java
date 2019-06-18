@@ -28,6 +28,8 @@ public class MyUmlInterface extends MyUmlClassOrInterface {
     }
     
     public void addSuperInterface(MyUmlInterface umlInterface) {
+        super.setReRealization(this.superInterfaces.values()
+                .contains(umlInterface));
         superInterfaces.put(umlInterface.getName(), umlInterface);
     }
     
@@ -46,7 +48,10 @@ public class MyUmlInterface extends MyUmlClassOrInterface {
         return null;
     }
     
-    public UmlInterface checkForUml009() {
+    public UmlInterface checkForUml009(Set<MyUmlInterface> m /* null */) {
+        if (super.checkForUml009()) {
+            return this.umlInterface;
+        }
         ArrayList<MyUmlInterface> queue = new ArrayList<>();
         queue.add(this);
         for (int pos = 0; pos != queue.size(); pos++) {

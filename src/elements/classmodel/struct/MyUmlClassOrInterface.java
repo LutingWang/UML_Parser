@@ -14,6 +14,7 @@ public abstract class MyUmlClassOrInterface {
     private final MyMap<MyUmlOperation> operations = new MyMap<>();
     private final ArrayList<MyUmlClassOrInterface> associations
             = new ArrayList<>();
+    private boolean reRealization = false;
     
     public abstract String getName();
     
@@ -40,6 +41,14 @@ public abstract class MyUmlClassOrInterface {
     }
     
     public abstract UmlClassOrInterface checkForUml008();
+    
+    void setReRealization(boolean flag) {
+        reRealization = reRealization || flag;
+    }
+    
+    boolean checkForUml009() {
+        return this.reRealization;
+    }
     
     @Override
     public String toString() {
