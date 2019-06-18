@@ -1,6 +1,5 @@
 package elements.classmodel.struct;
 
-import com.oocourse.uml2.interact.common.AttributeClassInformation;
 import com.oocourse.uml2.interact.exceptions.user.AttributeDuplicatedException;
 import com.oocourse.uml2.models.elements.UmlAttribute;
 import com.oocourse.uml2.models.elements.UmlClass;
@@ -11,7 +10,6 @@ import datastructure.exceptions.ElementNotFoundException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 public class MyUmlClass extends MyUmlClassOrInterface {
@@ -48,6 +46,10 @@ public class MyUmlClass extends MyUmlClassOrInterface {
         return attributes.values();
     }
     
+    public ArrayList<String> getAttributeNames() {
+        return new ArrayList<>(this.attributes.keys());
+    }
+    
     public UmlAttribute getAttribute(String name)
             throws AttributeDuplicatedException {
         try {
@@ -72,37 +74,6 @@ public class MyUmlClass extends MyUmlClassOrInterface {
     
     public void addAttribute(UmlAttribute attribute) {
         attributes.put(attribute.getName(), attribute);
-    }
-    
-    public HashSet<AttributeClassInformation> checkForUml002(String endName) {
-        HashSet<AttributeClassInformation> result = new HashSet<>();
-        Consumer<String> addInfo = attrname ->
-                result.add(new AttributeClassInformation(
-                        attrname, umlClass.getName()));
-        try {
-            if (this.getAttribute(endName) != null) {
-                addInfo.accept(endName);
-            }
-        } catch (Exception e) {
-            addInfo.accept(endName);
-        }
-        return result;
-    }
-    
-    public HashSet<AttributeClassInformation> checkForUml002() {
-        HashSet<AttributeClassInformation> result = new HashSet<>();
-        Consumer<String> addInfo = attrname ->
-                result.add(new AttributeClassInformation(
-                        attrname, umlClass.getName()));
-        ArrayList<String> attrnames = new ArrayList<>(this.attributes.keys());
-        for (int i = 0; i < attrnames.size() - 1; i++) {
-            for (int j = i + 1; j < attrnames.size(); j++) {
-                if (attrnames.get(i).equals(attrnames.get(j))) {
-                    addInfo.accept(attrnames.get(i));
-                }
-            }
-        }
-        return result;
     }
     
     @Override

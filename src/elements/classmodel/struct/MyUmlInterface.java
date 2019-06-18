@@ -39,7 +39,7 @@ public class MyUmlInterface extends MyUmlClassOrInterface {
         int pos = 0;
         for (list.add(this); pos < list.size(); pos++) {
             for (MyUmlInterface i : list.get(pos).superInterfaces.values()) {
-                if (list.contains(i)) {
+                if (i == this) {
                     return this.umlInterface;
                 }
                 list.add(i);

@@ -60,7 +60,7 @@ public class MyUmlStateMachine {
                     .filter(targetId -> !fromId.contains(targetId))
                     .forEach(fromId::add);
         }
-        return pos;
+        return (int) fromId.stream().distinct().count();
     }
     
     public ArrayList<UmlTransition> getTransitions() {
