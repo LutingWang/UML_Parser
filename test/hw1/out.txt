@@ -1,0 +1,287 @@
+Total class count is 10.
+Ok, operation count of class "Class2" is 2.
+Ok, operation count of class "Class2" is 5.
+Ok, operation count of class "Class2" is 3.
+Ok, operation count of class "Class2" is 4.
+Ok, operation count of class "Class2" is 7.
+Ok, operation count of class "Class4" is 0.
+Ok, operation count of class "Class4" is 0.
+Ok, operation count of class "Class4" is 0.
+Ok, operation count of class "Class4" is 0.
+Ok, operation count of class "Class4" is 0.
+Ok, operation count of class "Class12" is 0.
+Ok, operation count of class "Class12" is 0.
+Ok, operation count of class "Class12" is 0.
+Ok, operation count of class "Class12" is 0.
+Ok, operation count of class "Class12" is 0.
+Ok, operation count of class "Class11" is 0.
+Ok, operation count of class "Class11" is 0.
+Ok, operation count of class "Class11" is 0.
+Ok, operation count of class "Class11" is 0.
+Ok, operation count of class "Class11" is 0.
+Ok, operation count of class "Class6" is 0.
+Ok, operation count of class "Class6" is 0.
+Ok, operation count of class "Class6" is 0.
+Ok, operation count of class "Class6" is 0.
+Ok, operation count of class "Class6" is 0.
+Ok, operation count of class "Class3" is 0.
+Ok, operation count of class "Class3" is 0.
+Ok, operation count of class "Class3" is 0.
+Ok, operation count of class "Class3" is 0.
+Ok, operation count of class "Class3" is 0.
+Ok, operation count of class "Class5" is 0.
+Ok, operation count of class "Class5" is 0.
+Ok, operation count of class "Class5" is 0.
+Ok, operation count of class "Class5" is 0.
+Ok, operation count of class "Class5" is 0.
+Ok, operation count of class "Class7" is 0.
+Ok, operation count of class "Class7" is 0.
+Ok, operation count of class "Class7" is 0.
+Ok, operation count of class "Class7" is 0.
+Ok, operation count of class "Class7" is 0.
+Ok, operation count of class "Class1" is 1.
+Ok, operation count of class "Class1" is 0.
+Ok, operation count of class "Class1" is 1.
+Ok, operation count of class "Class1" is 0.
+Ok, operation count of class "Class1" is 1.
+Ok, operation count of class "Class8" is 0.
+Ok, operation count of class "Class8" is 0.
+Ok, operation count of class "Class8" is 0.
+Ok, operation count of class "Class8" is 0.
+Ok, operation count of class "Class8" is 0.
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Ok, attribute count of class "Class2" is 7.
+Ok, attribute count of class "Class2" is 4.
+Ok, attribute count of class "Class4" is 2.
+Ok, attribute count of class "Class4" is 2.
+Ok, attribute count of class "Class12" is 0.
+Ok, attribute count of class "Class12" is 0.
+Ok, attribute count of class "Class11" is 0.
+Ok, attribute count of class "Class11" is 0.
+Ok, attribute count of class "Class6" is 0.
+Ok, attribute count of class "Class6" is 0.
+Ok, attribute count of class "Class3" is 8.
+Ok, attribute count of class "Class3" is 1.
+Ok, attribute count of class "Class5" is 0.
+Ok, attribute count of class "Class5" is 0.
+Ok, attribute count of class "Class7" is 0.
+Ok, attribute count of class "Class7" is 0.
+Ok, attribute count of class "Class1" is 3.
+Ok, attribute count of class "Class1" is 3.
+Ok, attribute count of class "Class8" is 0.
+Ok, attribute count of class "Class8" is 0.
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Ok, association count of class "Class2" is 9.
+Ok, association count of class "Class4" is 0.
+Ok, association count of class "Class12" is 0.
+Ok, association count of class "Class11" is 0.
+Ok, association count of class "Class6" is 1.
+Ok, association count of class "Class3" is 11.
+Ok, association count of class "Class5" is 2.
+Ok, association count of class "Class7" is 0.
+Ok, association count of class "Class1" is 5.
+Ok, association count of class "Class8" is 0.
+Failed, class "random_class_2019" not found
+Ok, associated classes of class "Class2" are (Class1, Class2, Class3, Class5, Class6).
+Ok, associated classes of class "Class4" are ().
+Ok, associated classes of class "Class12" are ().
+Ok, associated classes of class "Class11" are ().
+Ok, associated classes of class "Class6" are (Class5).
+Ok, associated classes of class "Class3" are (Class1, Class2, Class3, Class5, Class6).
+Ok, associated classes of class "Class5" are (Class1, Class6).
+Ok, associated classes of class "Class7" are ().
+Ok, associated classes of class "Class1" are (Class1, Class2, Class3, Class5, Class6).
+Ok, associated classes of class "Class8" are ().
+Failed, class "random_class_2019" not found
+Ok, operation visibility of method "Operation2" in class "Class2" is public: 0, protected: 1, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation7" in class "Class2" is public: 0, protected: 0, private: 1, package-private: 0.
+Ok, operation visibility of method "SuperOperation1" in class "Class2" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation6" in class "Class2" is public: 0, protected: 0, private: 0, package-private: 1.
+Ok, operation visibility of method "Operation3" in class "Class2" is public: 0, protected: 1, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation4" in class "Class2" is public: 0, protected: 0, private: 0, package-private: 1.
+Ok, operation visibility of method "Operation5" in class "Class2" is public: 0, protected: 0, private: 0, package-private: 1.
+Ok, operation visibility of method "Operation1" in class "Class2" is public: 1, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "random_method_2019" in class "Class2" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation2" in class "Class4" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation7" in class "Class4" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "SuperOperation1" in class "Class4" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation6" in class "Class4" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation3" in class "Class4" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation4" in class "Class4" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation5" in class "Class4" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation1" in class "Class4" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "random_method_2019" in class "Class4" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation2" in class "Class12" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation7" in class "Class12" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "SuperOperation1" in class "Class12" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation6" in class "Class12" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation3" in class "Class12" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation4" in class "Class12" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation5" in class "Class12" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation1" in class "Class12" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "random_method_2019" in class "Class12" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation2" in class "Class11" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation7" in class "Class11" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "SuperOperation1" in class "Class11" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation6" in class "Class11" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation3" in class "Class11" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation4" in class "Class11" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation5" in class "Class11" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation1" in class "Class11" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "random_method_2019" in class "Class11" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation2" in class "Class6" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation7" in class "Class6" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "SuperOperation1" in class "Class6" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation6" in class "Class6" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation3" in class "Class6" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation4" in class "Class6" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation5" in class "Class6" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation1" in class "Class6" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "random_method_2019" in class "Class6" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation2" in class "Class3" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation7" in class "Class3" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "SuperOperation1" in class "Class3" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation6" in class "Class3" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation3" in class "Class3" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation4" in class "Class3" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation5" in class "Class3" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation1" in class "Class3" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "random_method_2019" in class "Class3" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation2" in class "Class5" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation7" in class "Class5" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "SuperOperation1" in class "Class5" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation6" in class "Class5" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation3" in class "Class5" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation4" in class "Class5" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation5" in class "Class5" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation1" in class "Class5" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "random_method_2019" in class "Class5" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation2" in class "Class7" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation7" in class "Class7" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "SuperOperation1" in class "Class7" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation6" in class "Class7" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation3" in class "Class7" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation4" in class "Class7" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation5" in class "Class7" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation1" in class "Class7" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "random_method_2019" in class "Class7" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation2" in class "Class1" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation7" in class "Class1" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "SuperOperation1" in class "Class1" is public: 1, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation6" in class "Class1" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation3" in class "Class1" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation4" in class "Class1" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation5" in class "Class1" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation1" in class "Class1" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "random_method_2019" in class "Class1" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation2" in class "Class8" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation7" in class "Class8" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "SuperOperation1" in class "Class8" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation6" in class "Class8" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation3" in class "Class8" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation4" in class "Class8" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation5" in class "Class8" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "Operation1" in class "Class8" is public: 0, protected: 0, private: 0, package-private: 0.
+Ok, operation visibility of method "random_method_2019" in class "Class8" is public: 0, protected: 0, private: 0, package-private: 0.
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, duplicated attribute "Attribute1" in class "Class2".
+Ok, attribute "Attribute4" in class "Class2"'s visibility is private.
+Failed, duplicated attribute "Attribute2" in class "Class2".
+Failed, duplicated attribute "Attribute3" in class "Class2".
+Failed, attribute "random_attr_2019" not found in class "Class2".
+Ok, attribute "Attribute1" in class "Class4"'s visibility is public.
+Failed, attribute "Attribute4" not found in class "Class4".
+Ok, attribute "Attribute2" in class "Class4"'s visibility is public.
+Failed, attribute "Attribute3" not found in class "Class4".
+Failed, attribute "random_attr_2019" not found in class "Class4".
+Failed, attribute "Attribute1" not found in class "Class12".
+Failed, attribute "Attribute4" not found in class "Class12".
+Failed, attribute "Attribute2" not found in class "Class12".
+Failed, attribute "Attribute3" not found in class "Class12".
+Failed, attribute "random_attr_2019" not found in class "Class12".
+Failed, attribute "Attribute1" not found in class "Class11".
+Failed, attribute "Attribute4" not found in class "Class11".
+Failed, attribute "Attribute2" not found in class "Class11".
+Failed, attribute "Attribute3" not found in class "Class11".
+Failed, attribute "random_attr_2019" not found in class "Class11".
+Failed, attribute "Attribute1" not found in class "Class6".
+Failed, attribute "Attribute4" not found in class "Class6".
+Failed, attribute "Attribute2" not found in class "Class6".
+Failed, attribute "Attribute3" not found in class "Class6".
+Failed, attribute "random_attr_2019" not found in class "Class6".
+Failed, duplicated attribute "Attribute1" in class "Class3".
+Ok, attribute "Attribute4" in class "Class3"'s visibility is private.
+Failed, duplicated attribute "Attribute2" in class "Class3".
+Failed, duplicated attribute "Attribute3" in class "Class3".
+Failed, attribute "random_attr_2019" not found in class "Class3".
+Failed, attribute "Attribute1" not found in class "Class5".
+Failed, attribute "Attribute4" not found in class "Class5".
+Failed, attribute "Attribute2" not found in class "Class5".
+Failed, attribute "Attribute3" not found in class "Class5".
+Failed, attribute "random_attr_2019" not found in class "Class5".
+Failed, attribute "Attribute1" not found in class "Class7".
+Failed, attribute "Attribute4" not found in class "Class7".
+Failed, attribute "Attribute2" not found in class "Class7".
+Failed, attribute "Attribute3" not found in class "Class7".
+Failed, attribute "random_attr_2019" not found in class "Class7".
+Ok, attribute "Attribute1" in class "Class1"'s visibility is private.
+Failed, attribute "Attribute4" not found in class "Class1".
+Ok, attribute "Attribute2" in class "Class1"'s visibility is private.
+Ok, attribute "Attribute3" in class "Class1"'s visibility is private.
+Failed, attribute "random_attr_2019" not found in class "Class1".
+Failed, attribute "Attribute1" not found in class "Class8".
+Failed, attribute "Attribute4" not found in class "Class8".
+Failed, attribute "Attribute2" not found in class "Class8".
+Failed, attribute "Attribute3" not found in class "Class8".
+Failed, attribute "random_attr_2019" not found in class "Class8".
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Failed, class "random_class_2019" not found
+Ok, top base class of class "Class2" is Class5.
+Ok, top base class of class "Class4" is Class4.
+Ok, top base class of class "Class12" is Class11.
+Ok, top base class of class "Class11" is Class11.
+Ok, top base class of class "Class6" is Class6.
+Ok, top base class of class "Class3" is Class5.
+Ok, top base class of class "Class5" is Class5.
+Ok, top base class of class "Class7" is Class7.
+Ok, top base class of class "Class1" is Class5.
+Ok, top base class of class "Class8" is Class8.
+Failed, class "random_class_2019" not found
+Ok, implement interfaces of class "Class2" are (Interface1, Interface2).
+Ok, implement interfaces of class "Class4" are ().
+Ok, implement interfaces of class "Class12" are (Interface6).
+Ok, implement interfaces of class "Class11" are (Interface6).
+Ok, implement interfaces of class "Class6" are ().
+Ok, implement interfaces of class "Class3" are (Interface1, Interface2).
+Ok, implement interfaces of class "Class5" are ().
+Ok, implement interfaces of class "Class7" are ().
+Ok, implement interfaces of class "Class1" are (Interface2).
+Ok, implement interfaces of class "Class8" are ().
+Failed, class "random_class_2019" not found
+No, attribute Attribute2 in Class2, are not hidden.
+No, attribute Attribute1 in Class4, Attribute2 in Class4, are not hidden.
+Yes, information of class "Class12" is hidden.
+Yes, information of class "Class11" is hidden.
+Yes, information of class "Class6" is hidden.
+No, attribute Attribute2 in Class2, are not hidden.
+Yes, information of class "Class5" is hidden.
+Yes, information of class "Class7" is hidden.
+Yes, information of class "Class1" is hidden.
+Yes, information of class "Class8" is hidden.
+Failed, class "random_class_2019" not found
